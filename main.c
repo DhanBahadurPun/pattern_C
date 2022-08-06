@@ -12,6 +12,12 @@ void square(int n)
     }
 }
 
+// * * * * *
+// * * * * *
+// * * * * *
+// * * * * *
+// * * * * *
+
 void increaseTriangle(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -23,6 +29,12 @@ void increaseTriangle(int n)
         printf("\n");
     }
 }
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
 
 void decreaseTriangle(int n)
 {
@@ -36,6 +48,12 @@ void decreaseTriangle(int n)
     }
 }
 
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+
 void decreaseTriangle1(int n)
 {
     for (int i = n; i >= 1; i--)
@@ -47,6 +65,12 @@ void decreaseTriangle1(int n)
         printf("\n");
     }
 }
+
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
 
 void rightSidedTriangle(int n)
 {
@@ -67,6 +91,12 @@ void rightSidedTriangle(int n)
     }
 }
 
+//           *
+//         * *
+//       * * *
+//     * * * *
+//   * * * * *
+
 void rightSidedTriangle1(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -86,6 +116,12 @@ void rightSidedTriangle1(int n)
         printf("\n");
     }
 }
+
+// * * * * *
+//   * * * *
+//     * * *
+//       * *
+//         *
 
 void hill(int n)
 {
@@ -110,6 +146,12 @@ void hill(int n)
         printf("\n");
     }
 }
+
+//           *
+//         * * *
+//       * * * * *
+//     * * * * * * *
+//   * * * * * * * * *
 
 void reverseHill(int n)
 {
@@ -136,6 +178,12 @@ void reverseHill(int n)
         printf("\n");
     }
 }
+
+//   * * * * * * * * *
+//     * * * * * * *
+//       * * * * *
+//         * * *
+//           *
 
 void diamond(int n)
 {
@@ -185,23 +233,180 @@ void diamond(int n)
     }
 }
 
+//           *
+//         * * *
+//       * * * * *
+//     * * * * * * *
+//   * * * * * * * * *
+//     * * * * * * *
+//       * * * * *
+//         * * *
+//           *
+
 void doubleHill(int n)
 {
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j <= n; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = 1; j < i; j++)
+        {
+            printf("* ");
+        }
+
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        for (int j = i; j < n; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = i; j < n; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = 1; j < i; j++)
+        {
+            printf("* ");
+        }
+
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
 }
+
+//           *                 *
+//         * * *             * * *
+//       * * * * *         * * * * *
+//     * * * * * * *     * * * * * * *
+//   * * * * * * * * * * * * * * * * * *
 
 void butterfly(int n)
 {
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        for (int j = i; j < n; j++)
+        {
+            printf("  ");
+        }
+        for (int j = i; j < n; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j <= n; j++)
+        {
+            printf("* ");
+        }
+
+        for (int j = 1; j < i; j++)
+        {
+            printf("  ");
+        }
+        for (int j = 1; j < i; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = i; j <= n; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
 }
+
+// *                 *
+// * *             * *
+// * * *         * * *
+// * * * *     * * * *
+// * * * * * * * * * *
+// * * * *     * * * *
+// * * *         * * *
+// * *             * *
+// *                 *
 
 void sandglass(int n)
 {
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = i; j < n; j++)
+        {
+            printf("* ");
+        }
+        for (int j = i; j <= n; j++)
+        {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j <= n; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = 1; j < i; j++)
+        {
+            printf("* ");
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
 }
 
-leftPascalTriangle(int n)
+//   * * * * * * * * *
+//     * * * * * * *
+//       * * * * *
+//         * * *
+//           *
+//           *
+//         * * *
+//       * * * * *
+//     * * * * * * *
+//   * * * * * * * * *
+
+void leftPascalTriangle(int n)
 {
 }
 
-rightPascalTriangle(int n)
+void rightPascalTriangle(int n)
 {
     for (int i = 1; i < n; i++)
     {
@@ -235,13 +440,42 @@ rightPascalTriangle(int n)
         printf("\n");
     }
 }
+
+//           *
+//         * *
+//       * * *
+//     * * * *
+//   * * * * *
+//     * * * *
+//       * * *
+//         * *
+//           *
+
 int main()
 {
-    square(5);
-    increaseTriangle(5);
-    decreaseTriangle1(5);
-    rightSidedTriangle(5);
-    rightSidedTriangle1(10);
+    // square(5);
+    // printf("\n");
+    // increaseTriangle(5);
+    // printf("\n");
+    // decreaseTriangle1(5);
+    // printf("\n");
+    // rightSidedTriangle(5);
+    // printf("\n");
+    // rightSidedTriangle1(5);
+    hill(5);
 
+    printf("\n");
+    reverseHill(5);
+    printf("\n");
+    diamond(5);
+    printf("\n");
+    doubleHill(5);
+    printf("\n");
+    butterfly(5);
+    printf("\n");
+    sandglass(5);
+    printf("\n");
+    rightPascalTriangle(5);
+    printf("\n");
     return 0;
 }
