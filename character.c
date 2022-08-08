@@ -114,6 +114,29 @@ void decrementTriangle2(int n)
     }
 }
 
+void Pyramid(int n)
+{
+    for (int i = 1, k = 1; i <= n; i++, k++)
+    {
+
+        for (int j = i; j <= n; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = 1, p = k; j <= i; j++, p--)
+        {
+            printf("%d ", p);
+        }
+        for (int j = 1, r = 2; j < i; j++, r++)
+        {
+            printf("%d ", r);
+        }
+
+        printf("\n");
+    }
+}
+
 int main()
 {
 
@@ -137,6 +160,8 @@ int main()
     int size = sizeof A / sizeof A[0];
 
     incrementTriangle5(A, size);
+    printf("\n");
+    Pyramid(4);
 
     return 0;
 }
