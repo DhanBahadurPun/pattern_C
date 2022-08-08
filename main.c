@@ -123,6 +123,57 @@ void rightSidedTriangle1(int n)
 //       * *
 //         *
 
+void Triangle1(int n)
+{
+    // decreasing pattern triangle
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j <= n; j++)
+        {
+            printf(" ");
+        }
+        // increasing pattern triangle
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+}
+
+//     *
+//    * *
+//   * * *
+//  * * * *
+// * * * * *
+
+void rightSidedTriangle1(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+
+        // increaseing Space
+        for (int j = 1; j <= i; j++)
+        {
+            printf(" ");
+        }
+
+        // decreasing star
+        for (int j = i; j <= n; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+//  * * * * *
+//   * * * *
+//    * * *
+//     * *
+//      *
+
 void hill(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -184,6 +235,51 @@ void reverseHill(int n)
 //       * * * * *
 //         * * *
 //           *
+
+void dimond1(int n)
+{
+    // decreasing pattern triangle
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j <= n; j++)
+        {
+            printf(" ");
+        }
+        // increasing pattern triangle
+        for (int j = 1; j < i; j++)
+        {
+            printf(" *");
+        }
+
+        printf("\n");
+    }
+    for (int i = 1; i <= n; i++)
+    {
+
+        // increaseing Space
+        for (int j = 1; j <= i; j++)
+        {
+            printf(" ");
+        }
+
+        // decreasing star
+        for (int j = i; j <= n; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
+//   * * * *
+//    * * *
+//     * *
+//      *
 
 void diamond(int n)
 {
@@ -290,6 +386,43 @@ void doubleHill(int n)
 //       * * * * *         * * * * *
 //     * * * * * * *     * * * * * * *
 //   * * * * * * * * * * * * * * * * * *
+
+void doubleHill1(int n)
+{
+    // decreasing pattern triangle
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j <= n; j++)
+        {
+            printf(" ");
+        }
+        // increasing pattern triangle
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        // decreasing star
+        for (int j = i; j < n; j++)
+        {
+            printf("  ");
+        }
+
+        // increasing pattern triangle
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+}
+
+//      *         *
+//     * *       * *
+//    * * *     * * *
+//   * * * *   * * * *
+//  * * * * * * * * * *
 
 void butterfly(int n)
 {
