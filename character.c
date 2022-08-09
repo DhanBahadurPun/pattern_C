@@ -137,6 +137,66 @@ void Pyramid(int n)
     }
 }
 
+//         1
+//       2 1 2
+//     3 2 1 2 3
+//   4 3 2 1 2 3 4
+
+void IncreaseNumberTriangle(int n)
+{
+    int num = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%d ", num);
+            num++;
+        }
+        printf("\n");
+    }
+}
+
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+
+void IncreaseNum(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        int num = i;
+        int differ = n - 1;
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%d ", num);
+            num = num + differ;
+            differ--;
+        }
+
+        printf("\n");
+    }
+}
+
+void IncreaseNum1(int n)
+{
+    for (int i = 1, num = 1; i <= n; i++, num++)
+    {
+        for (int j = 1, p = num; j <= i; j++, p--)
+        {
+            printf("%d ", p);
+        }
+
+        printf("\n");
+    }
+}
+
+// 1
+// 2 1
+// 3 2 1
+// 4 3 2 1
+// 5 4 3 2 1
+
 int main()
 {
 
@@ -162,6 +222,14 @@ int main()
     incrementTriangle5(A, size);
     printf("\n");
     Pyramid(4);
+
+    printf("\n");
+    IncreaseNumberTriangle(4);
+
+    printf("\n");
+    IncreaseNum(5);
+    printf("\n");
+    IncreaseNum1(5);
 
     return 0;
 }
